@@ -57,12 +57,6 @@ The main objective of this project is to design and evaluate RL models that lear
 ### Performance Metrics
 The following metrics are calculated to assess portfolio performance:
 
-Sharpe Ratio: Measures risk-adjusted returns.
-
-Sortino Ratio: Similar to Sharpe Ratio but considers downside risk.
-
-Maximum Drawdown: Quantifies the largest portfolio loss from peak to trough.
-
 Value at Risk (VaR): Estimates the potential loss at a given confidence level.
 
 Conditional Value at Risk (CVaR): Measures expected loss beyond VaR.
@@ -84,10 +78,6 @@ Visualization
 Cumulative Returns: Compare portfolio growth over time.
 
 Risk-Return Scatterplots: Show portfolio positioning relative to benchmarks.
-
-Drawdown Analysis: Identify periods of high risk and recovery.
-
-
 
 ## Contributing
 
