@@ -8,7 +8,7 @@ The main objective of this project is to design and evaluate RL models that lear
 - **Data Preprocessing:** Historical returns data for commodities is processed, normalized, and clustered using PCA (Principal Component Analysis) and KMeans clustering.
 - **LSTM Forecasting:** LSTM forecasting is incorporated to predict future returns and provide a more accurate decision-making process.
 - **Reinforcement Learning Models:** The PPO and TD3 models are trained and evaluated for portfolio optimization.
-- **Performance Metrics:** Several risk-adjusted performance metrics (such as Conditional Value at Risk - CVaR, Return-to-Risk Ratio - R2R, and volatility) are computed and visualized.
+- **Performance Metrics:** Several risk-adjusted performance metrics (such as Conditional Value at Risk - CVaR, Reward-to-Risk Ratio - R2R, and volatility) are computed and visualized.
 - **Hybrid PPO-LSTM Model Integration:** Combines reinforcement learning (PPO) with deep learning (LSTM) to improve predictions and decision-making.
 
 ## Repository Structure
