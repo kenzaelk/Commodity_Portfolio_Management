@@ -54,7 +54,7 @@ The main objective of this project is to design and evaluate RL models that lear
 - **Normalization:** Scales data to ensure consistent model performance.
 
 ### Proposed Model Architecture
-# Proximal Policy Optimization (PPO) + LSTM
+#### Proximal Policy Optimization (PPO) + LSTM
 - PPO helps optimize trading strategies using a policy-gradient approach.
 - LSTM captures long-term dependencies in commodity price movements.
 - The combined PPO-LSTM framework improves decision-making adaptability.
