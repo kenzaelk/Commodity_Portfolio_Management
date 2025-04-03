@@ -9,7 +9,7 @@ The main objective of this project is to design and evaluate RL models that lear
 - **LSTM Forecasting:** LSTM forecasting is incorporated to predict future returns and provide a more accurate decision-making process.
 - **Reinforcement Learning Models:** The PPO and TD3 models are trained and evaluated for portfolio optimization.
 - **Performance Metrics:** Several risk-adjusted performance metrics (such as Conditional Value at Risk - CVaR, Return-to-Risk Ratio - R2R, and volatility) are computed and visualized.
-- **PPO-LSTM Integration:** An extension of the PPO model with an LSTM feature extractor is implemented to capture temporal dependencies in the return series.
+- **Hybrid PPO-LSTM Model Integration:** Combines reinforcement learning (PPO) with deep learning (LSTM) to improve predictions and decision-making.
 
 ## Repository Structure
 
@@ -46,38 +46,26 @@ The main objective of this project is to design and evaluate RL models that lear
     ```
 
 2. Navigate to the desired notebook (`forecasting-performance.ipynb` or `portfolio-performance.ipynb`) and run the cells to perform data analysis and model training.
-3. 
 
 ## Methodology
 ### Data Preprocessing
-- **Cleaning:** Handle missing values and outliers.
-- **Feature Engineering:** Create new financial ratios and performance indicators.
-- **Normalization:** Scale data for machine learning models.
+- **Feature Engineering:** Extracts key financial indicators to enhance predictive accuracy.
+- **Market Regime Detection:** Uses clustering techniques to classify different market conditions.
+- **Normalization:** Scales data to ensure consistent model performance.
+
+### Proposed Model Architecture
+# Proximal Policy Optimization (PPO) + LSTM
+- PPO helps optimize trading strategies using a policy-gradient approach.
+- LSTM captures long-term dependencies in commodity price movements.
+- The combined PPO-LSTM framework improves decision-making adaptability.
 
 ### Performance Metrics
-The following metrics are calculated to assess portfolio performance:
+To assess the effectiveness of the models, the following key metrics are used:
 
-Value at Risk (VaR): Estimates the potential loss at a given confidence level.
-
-Conditional Value at Risk (CVaR): Measures expected loss beyond VaR.
-
-### Machine Learning Models
-
-The forecasting of portfolio performance is done using Long Short-Term Memory (LSTM) models. LSTM is a type of recurrent neural network (RNN) well-suited for time series data like financial returns, allowing the model to capture long-term dependencies in historical data for accurate forecasting.
-
-Forecasting Portfolio Performance
-The forecasting-performance.ipynb focuses on using machine learning models to forecast the future performance of the portfolio based on historical data. It includes:
-
-Feature Selection: Identifying relevant features that impact future performance.
-
-Modeling: Training models to predict future returns and performance indicators.
-
-Evaluation: Comparing forecast accuracy with real-world data to assess model robustness.
-
-Visualization
-Cumulative Returns: Compare portfolio growth over time.
-
-Risk-Return Scatterplots: Show portfolio positioning relative to benchmarks.
+- **Annual Volatility Analysis:** Measures the risk associated with different trading strategies.
+- **Cumulative Return Comparison:** Evaluates overall profitability against baseline models.
+- **Reward to Risk (R2R):** Determines the trade-off between risk and return for each model.
+- **Conditional Value at Risk (CVaR):** Estimates potential losses in extreme market conditions, ensuring robust risk management.
 
 ## Contributing
 
